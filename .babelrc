@@ -1,3 +1,8 @@
+// configuration file for Babel. It tells Babel how to transpile your code.
+// Babel needs to know which presets and plugins to use.
+// @babel/preset-env: Automatically determines which JavaScript features need to be transpiled based on the target browsers.
+// @babel/preset-reactTransforms :  JSX (React’s syntax) into regular JavaScript.
+
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }

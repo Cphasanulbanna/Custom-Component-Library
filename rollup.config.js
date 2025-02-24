@@ -5,7 +5,7 @@ import terser from "@rollup/plugin-terser";
 import replace from "@rollup/plugin-replace";
 
 export default {
-  input: "src/index.js",
+  input: "src/index.js", // Entry point for your library
   output: [
     {
       file: "dist/ui-library.cjs.js",
@@ -25,6 +25,7 @@ export default {
     resolve(), // Resolves node_modules
     commonjs(), // Converts CommonJS modules to ES6
     babel({
+      // Transpiles JavaScript
       exclude: "node_modules/**",
       babelHelpers: "bundled",
       presets: ["@babel/preset-env", "@babel/preset-react"],

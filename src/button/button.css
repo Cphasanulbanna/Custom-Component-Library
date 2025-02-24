@@ -1,0 +1,17 @@
+.button {
+  padding: 4px 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  outline: none;
+}
+
+.primary {
+  background-color: #f50c98;
+  color: white;
+}
+
+.secondary {
+  background-color: #0d90f4;
+  color: white;
+}
