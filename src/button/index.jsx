@@ -6,6 +6,7 @@ const Button = ({
   onClick,
   disabled,
   hidden,
+  loading = false,
   ...rest
 }) => {
   return (
@@ -16,7 +17,7 @@ const Button = ({
       onClick={onClick}
       {...rest}
     >
-      {children}
+      {loading ? <span>...</span> : children}
     </button>
   );
 };

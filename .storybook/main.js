@@ -1,18 +1,20 @@
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
   stories: [
-    "../stories/**/*.mdx",
-    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)", // Look for stories in the src directory
   ],
   addons: [
-    "@storybook/addon-onboarding",
+    "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: "@storybook/react-vite", // Use the correct framework for your project
     options: {},
   },
+  docs: {
+    autodocs: "tag",
+  },
 };
+
 export default config;

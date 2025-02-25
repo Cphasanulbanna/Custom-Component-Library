@@ -3,6 +3,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import terser from "@rollup/plugin-terser";
 import replace from "@rollup/plugin-replace";
+import postcss from "rollup-plugin-postcss";
 
 export default {
   input: "src/index.js", // Entry point for your library
@@ -30,7 +31,8 @@ export default {
       babelHelpers: "bundled",
       presets: ["@babel/preset-env", "@babel/preset-react"],
     }),
-    terser(), // Minifies the output
+    terser(),
+    postcss(), // Minifies the output
   ],
   external: ["react", "react-dom"], // Exclude React from the bundle
 };

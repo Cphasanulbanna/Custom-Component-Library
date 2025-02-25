@@ -28,13 +28,17 @@
     "@rollup/plugin-terser": "^0.4.4",
     "@storybook/addon-essentials": "^8.5.8",
     "@storybook/addon-interactions": "^8.5.8",
+    "@storybook/addon-links": "^8.5.8",
     "@storybook/addon-onboarding": "^8.5.8",
     "@storybook/blocks": "^8.5.8",
+    "@storybook/builder-vite": "^8.5.8",
     "@storybook/react": "^8.5.8",
     "@storybook/react-vite": "^8.5.8",
     "@storybook/test": "^8.5.8",
+    "@vitejs/plugin-react": "^4.3.4",
     "prop-types": "^15.8.1",
     "rollup": "^4.34.8",
+    "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^8.5.8"
   }
 }
