@@ -1,4 +1,4 @@
-import "./button.css";
+import "./button.style.css";
 
 const Button = ({
   children,
@@ -13,7 +13,7 @@ const Button = ({
     <button
       hidden={hidden}
       disabled={disabled}
-      className={`button ${variant} ${loading && "loading"}`}
+      className={`button ${variant} ${loading ? "loading" : ""}`}
       onClick={onClick}
       {...rest}
     >
