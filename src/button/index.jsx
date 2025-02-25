@@ -13,7 +13,7 @@ const Button = ({
     <button
       hidden={hidden}
       disabled={disabled}
-      className={`button ${variant}`}
+      className={`button ${variant} ${loading && "loading"}`}
       onClick={onClick}
       {...rest}
     >
